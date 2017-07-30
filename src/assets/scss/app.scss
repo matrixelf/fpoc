@@ -1,0 +1,159 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+ @include foundation-grid;
+// @include foundation-flex-grid;
+//
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+ @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+a.button{
+	color: white;
+}
+.container{
+	max-width:97%;
+	margin:auto;
+}
+.center{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.float-left, .float-right{
+	position: relative;
+	min-width:30%
+}
+
+/* header menu*/
+
+.close-button{
+	z-index: 999;
+}
+i{
+
+	text-align: center;
+}
+ul a{
+	color: $blue;
+}
+.nested a{
+	color: black;
+}
+.is-accordion-submenu a:hover{
+	color: $dark-gray;
+}
+.accordion-menu{
+	    border: 1px solid #ccc;
+	    padding-bottom: .5em;
+}
+.title-bar-left{
+	padding: 0em 1em;
+	font-size: 1.25em;
+}
+button i{
+	font-size: 1.5em;
+}
+
+.title-bar-left li{
+	padding-right: 1.5em;
+}
+body{
+	padding-top: 1em;
+}
+.header{
+	background-color: white;
+}
+.mobile-ofc{
+	margin-top: 3em;
+}
+/* TABLE */
+td {
+	/*padding: 0;
+	white-space: nowrap;
+	max-width: 50em;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    height: .5em;*/
+    text-align: center;
+}
+tr{
+	border: 1px solid;
+}
+td, th{
+	border-right: 1px solid $dark-gray;
+}
+.alert{
+	color: $alert-color;
+}
+.fi-folder{
+	color: $warning-color;
+}
+td i{
+	font-size: 1.5em;
+}
+td .menu a{
+
+	padding: .2em;
+}
+table{
+	margin: auto;
+
+}
+td [type="checkbox"], th [type="checkbox"]{
+	margin:0;
+}
+
+/* footer */
+footer{
+	width:100%; 
+	background-color: white;
+}
+footer .menu{
+	background-color:white;
+}

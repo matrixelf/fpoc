@@ -11,10 +11,10 @@
    <body>
       <div class="container">
          <div class="row header" data-sticky data-sticky-on="small" data-options="marginTop:0;">
-            <div class="small-12 medium-4 large-2 columns">
+            <div class="">
                <div class="logo"><img src="assets/img/appcoll-logo.png" alt="logo" height="40" width="169"></div>
             </div>
-            <div class="title-bar-left small-12 large-10 columns">
+            <div class="title-bar-left">
                <ul class="menu">
                   <li data-hide-for="">
                      <i class="fi-list"  data-toggle="menu"></i>
@@ -27,7 +27,7 @@
                      <div class="title-bar-title">Change Columns</div>
                   </li> -->
                   <li>
-<div class="title-bar" data-responsive-toggle="edit" data-hide-for="">
+<div class="title-bar"  data-responsive-toggle="edit" data-hide-for="">
   <button class="fi-wrench" type="button" data-toggle="edit"></button>
   <div class="title-bar-title">Menu</div>
 </div></li>
@@ -40,7 +40,7 @@
                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
                <span aria-hidden="true">&times;</span>
                </button>
-               <ul class="mobile-ofc vertical menu">
+               <ul class="vertical menu">
                   <li>
                      <ul class="vertical menu accordion-menu" data-accordion-menu>
                         <li>
@@ -94,458 +94,442 @@
          </div>
 
          <!-- add meny to activate script to hide columns display none or show them again-->
-         
-         
-         
          <div class="grid-x grid-padding-x" id="anchor">
-         <div id="anchor" class="cell small-12 flex-container flex-dir-column large-flex-dir-row">
-         
-         
-         <div class=" flex-child-shrink small-12 medium-12 large-3" id="edit">
-         <div class="sticky" data-sticky data-top-anchor="anchor:top">
-           <ul class="mobile-ofc vertical menu" data-hide-for="">
-           <li>
-         <ul class="vertical medium-horizontal menu accordion-menu" data-accordion-menu>
-                 <li>
-                   <a href="#">Make Changes</a>
-                   <ul class="menu vertical medium-horizontal nested">
-                     <li><a href="#">Add</a></li>
-                     <li><a href="#">Delete</a></li>
-                     <li><a href="#">Rechedule</a></li>
-                     <li><a href="#">Set Owner</a></li>
-                     <li><a href="#">Close Tasks</a></li>
-                     <li><a href="#">Add comment To Tasks</a></li>
-                     <li><a href="#">Ad Document/Form Letter</a></li>
-                     <li><a href="#">Resend Notifications</a></li>
-                     <li><a href="#">Regenerate Taks</a></li>
-                     <li><a href="#">Delete Duplicate Tasks</a></li>
-                   </ul>
-                 </li>        
-         </ul>
-         
-             </li>
-             <li>
-               <ul class="vertical menu accordion-menu" data-accordion-menu>
-                 <li>
-                   <a href="#">Navigate</a>
-                   <ul class="vertical menu nested">
-                     <li>
-                       <a href="#">Manage Task Types</a>
-                       <ul class="menu vertical nested">
-                         <li><a href="#"> </a></li>
+           <div id="anchor" class="row">
+             <div class=" small-12 medium-4 large-3 columns" data-animate="slide-in-left slide-out-left" id="edit">
+               <div class="sticky" data-sticky data-sticky-on="medium" data-top-anchor="anchor:top">
+                 <ul class="mobile-ofc vertical menu" data-hide-for="">
+                   <li>
+                     <ul class=" menu accordion-menu" data-accordion-menu>
+                       <li>
+                         <a href="#">Make Changes</a>
+                         <ul class="menu nested">
+                           <li><a href="#">Add</a></li>
+                           <li><a href="#">Delete</a></li>
+                           <li><a href="#">Rechedule</a></li>
+                           <li><a href="#">Set Owner</a></li>
+                           <li><a href="#">Close Tasks</a></li>
+                           <li><a href="#">Add comment To Tasks</a></li>
+                           <li><a href="#">Ad Document/Form Letter</a></li>
+                           <li><a href="#">Resend Notifications</a></li>
+                           <li><a href="#">Regenerate Taks</a></li>
+                           <li><a href="#">Delete Duplicate Tasks</a></li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                   <li>
+                     <ul class="menu accordion-menu" data-accordion-menu>
+                       <li>
+                         <a href="#">Navigate</a>
+                         <ul class="vertical menu nested">
+                           <li>
+                             <a href="#">Manage Task Types</a>
+                             <ul class="menu vertical nested">
+                               <li><a href="#"> </a></li>
+                             </ul>
+                           </li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                   <li>
+                     <ul class="vertical menu accordion-menu" data-accordion-menu>
+                       <li>
+                         <a href="#">Alter Current View</a>
+                         <ul class="menu vertical nested">
+                           <li><a href="#">Save View as Report</a></li>
+                           <li>
+                             <label>
+                               Select Report
+                               <select>
+                                 <option value="r1">Report 1</option>
+                                 <option value="r2">Report 2</option>
+                                 <option value="r3">Report 3</option>
+                                 <option value="r4">Report 4</option>
+                               </select>
+                             </label>
+                           </li>
+                           <li>
+                             <label>
+                               Filter
+                               <select>
+                                 <option value="Open">All Open</option>
+                                 <option value="closed">All Closed</option>
+                               </select>
+                             </label>
+                           </li>
+                           <li><a href="#">Add Filters</a></li>
+                           <li>
+                             <label>
+                               Items/Page
+                               <select>
+                                 <option value="25">25</option>
+                                 <option value="50">50</option>
+                                 <option value="75">75</option>
+                               </select>
+                             </label>
+                           </li>
+                           <li><input id="wrap-text" type="checkbox"> <label for="wrap-text">Wrap Text</label></li>
+                         </ul>
+                       </li>
+                     </ul>
+                   </li>
+                   <li class="text-center">
+                     <a class="">
+                     <i class="fi-clock"></i> 
+                     Timers
+                     </a>
+                   </li>
+                   <li class="text-center">
+                     <a class="">
+                     <i class="fi-arrow-up"></i> 
+                     Import
+                     </a>
+                   </li>
+                   <li class="text-center" data-toggle="example-menu" data-hide-for="">
+                     <a>
+                     <i class="fi-eye"></i>
+                     Change Columns
+                     </a>
+                   </li>
+                   <li><input type="search" placeholder="Search"></li>
+                   <li>
+                     <a class="">
+                     <i class="fi-magnifying-glass"></i> 
+                     Search
+                     </a>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+             <div class="columns">
+               <table class="striped hover">
+                 <thead>
+                   <tr>
+                     <th class="text-center" width="20"><input type="checkbox"></th>
+                     <th class="text-center" width="150">Links</th>
+                     <th class="text-center" width="80">Task Status</th>
+                     <th class="text-center" width="200" >Matter</th>
+                     <th class="text-center" width="100" >Task Type</th>
+                     <th class="text-center" width="100" >Respond By</th>
+                     <th class="text-center" width="100">Final Due Date</th>
+                     <th class="text-center" width="200">Owner</th>
+                     <th class="text-center">Deadline Type</th>
+                     <th class="text-center" width="500">Comments</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
                        </ul>
-                     </li>
-                   </ul>
-                 </li>
-               </ul>
-             </li>
-             <li>
-               <ul class="vertical menu accordion-menu" data-accordion-menu>
-                 <li>
-                   <a href="#">Alter Current View</a>
-                   <ul class="menu vertical nested">
-                     <li><a href="#">Save View as Report</a></li>
-                     <li>
-                       <label>
-                         Select Report
-                         <select>
-                           <option value="r1">Report 1</option>
-                           <option value="r2">Report 2</option>
-                           <option value="r3">Report 3</option>
-                           <option value="r4">Report 4</option>
-                         </select>
-                       </label>
-                     </li>
-                     <li>
-                       <label>
-                         Filter
-                         <select>
-                           <option value="Open">All Open</option>
-                           <option value="closed">All Closed</option>
-                         </select>
-                       </label>
-                     </li>
-                     <li><a href="#">Add Filters</a></li>
-                     <li>
-                       <label>
-                         Items/Page
-                         <select>
-                           <option value="25">25</option>
-                           <option value="50">50</option>
-                           <option value="75">75</option>
-                         </select>
-                       </label>
-                     </li>
-                     <li><input id="wrap-text" type="checkbox"> <label for="wrap-text">Wrap Text</label></li>
-                   </ul>
-                 </li>
-               </ul>
-             </li>
-             <li class="text-center">
-               <a class="">
-               <i class="fi-clock"></i> 
-               Timers
-               </a>
-             </li>
-             <li class="text-center">
-               <a class="">
-               <i class="fi-arrow-up"></i> 
-               Import
-               </a>
-             </li>
-             <li class="text-center" data-toggle="example-menu" data-hide-for="">
-               <a>
-                 <i class="fi-eye"></i>
-               Change Columns
-               </a>
-             </li>
-             <li><input type="search" placeholder="Search"></li>
-             <li>
-               <a class="">
-               <i class="fi-magnifying-glass"></i> 
-               Search
-               </a>
-             </li>
-           </ul>
-           </div>
-           </div>
-           <div class="flex-child-auto">
-           <table class="striped hover">
-             <thead>
-               <tr>
-                 <th class="text-center" width="20"><input type="checkbox"></th>
-                 <th class="text-center" width="150">Links</th>
-                 <th class="text-center" width="80">Task Status</th>
-                 <th class="text-center" width="200" >Matter</th>
-                 <th class="text-center" width="100" >Task Type</th>
-                 <th class="text-center" width="100" >Respond By</th>
-                 <th class="text-center" width="100">Final Due Date</th>
-                 <th class="text-center" width="200">Owner</th>
-                 <th class="text-center">Deadline Type</th>
-                 <th class="text-center" width="500">Comments</th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009e </td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Closed</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are CommentsThese are Comments The</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009e </td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Closed</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are CommentsThese are Comments The</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009e </td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments vThese are Comments These are Comments These are Comments These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Closed</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are CommentsThese are Comments The</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009e </td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Closed</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are CommentsThese are Comments The </td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Open</td>
-                 <td>AAA-007009e </td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are Comments</td>
-               </tr>
-               <tr>
-                 <td><input type="checkbox"></td>
-                 <td>
-                   <ul class="menu align-center">
-                     <li><a href="#"><i class="fi-folder"></i></a></li>
-                     <li><a href="#"><i class="fi-arrow-right"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar primary"></i></a></li>
-                     <li><a href="#"><i class="fi-calendar alert"></i></a></li>
-                   </ul>
-                 </td>
-                 <td>Closed</td>
-                 <td>AAA-007009</td>
-                 <td>This is a Task Type</td>
-                 <td>01/01/17</td>
-                 <td>08/01/17</td>
-                 <td>Joseph Zurawskj</td>
-                 <td>Some Deadline Type</td>
-                 <td>These are CommentsThese are Comments The</td>
-               </tr>
-             </tbody>
-           </table>
-           </div>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009e </td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Closed</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are CommentsThese are Comments The</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009e </td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Closed</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are CommentsThese are Comments The</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009e </td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments vThese are Comments These are Comments These are Comments These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Closed</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are CommentsThese are Comments The</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009e </td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Closed</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are CommentsThese are Comments The </td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Open</td>
+                     <td>AAA-007009e </td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are Comments</td>
+                   </tr>
+                   <tr>
+                     <td><input type="checkbox"></td>
+                     <td>
+                       <ul class="menu align-center">
+                         <li><a href="#"><i class="fi-folder"></i></a></li>
+                         <li><a href="#"><i class="fi-arrow-right"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar primary"></i></a></li>
+                         <li><a href="#"><i class="fi-calendar alert"></i></a></li>
+                       </ul>
+                     </td>
+                     <td>Closed</td>
+                     <td>AAA-007009</td>
+                     <td>This is a Task Type</td>
+                     <td>01/01/17</td>
+                     <td>08/01/17</td>
+                     <td>Joseph Zurawskj</td>
+                     <td>Some Deadline Type</td>
+                     <td>These are CommentsThese are Comments The</td>
+                   </tr>
+                 </tbody>
+               </table>
+             </div>
            </div>
          </div>
-         
          <!-- hidden change columns menu -->
-                  <div class="off-canvas position-right" data-position="right" id="example-menu" data-off-canvas>
-                     <div class="off-canvas position-right is-transition-push is-open" data-position="right" aria-hidden="true">
-                        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                        <ul class="mobile-ofc vertical menu nested">
-                           <!-- $("#links").prop("checked") -->
-                           <li><input id="links" type="checkbox" checked="checked"> <label for="wrap-text">Links</label></li>
-                           <li><input id="task-status" type="checkbox" checked="checked"> <label for="wrap-text">Task Status</label></li>
-                           <li><input id="matter" type="checkbox" checked="checked"> <label for="wrap-text">Matter</label></li>
-                           <li><input id="task-type" type="checkbox" checked="checked"> <label for="wrap-text">Task Type</label></li>
-                           <li><input id="respond-by" type="checkbox" checked="checked"> <label for="wrap-text">Respond By</label></li>
-                           <li><input id="final-due-date" type="checkbox" checked="checked"> <label for="wrap-text">Final Due Date</label></li>
-                           <li><input id="owner" type="checkbox" checked="checked"> <label for="wrap-text">Owner</label></li>
-                           <li><input id="deadline-type" type="checkbox" checked="checked"> <label for="wrap-text">Deadline Type</label></li>
-                           <li><input id="comments" type="checkbox" checked="checked"> <label for="wrap-text">Comments</label></li>
-                           <li>  <a class="button" href="#">Update Table</a> </li>
-                        </ul>
-                     </div>
-                  </div>
-         
-                  <div class="grid-x grid-padding-x">
-           <div class="cell small-12 flex-container flex-dir-column large-flex-dir-row">
-             <div class="callout primary flex-child-auto">Auto</div>
-             <div class="callout primary flex-child-auto">Auto</div>
-             <div class="callout primary flex-child-shrink large-flex-child-auto">Auto on Large</div>
+         <div class="off-canvas position-right" data-position="right" id="example-menu" data-off-canvas>
+           <div class="off-canvas position-right is-transition-push is-open" data-position="right" aria-hidden="true">
+             <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+             <span aria-hidden="true">&times;</span>
+             </button>
+             <ul class="mobile-ofc vertical menu nested">
+               <!-- $("#links").prop("checked") -->
+               <li><input id="links" type="checkbox" checked="checked"> <label for="wrap-text">Links</label></li>
+               <li><input id="task-status" type="checkbox" checked="checked"> <label for="wrap-text">Task Status</label></li>
+               <li><input id="matter" type="checkbox" checked="checked"> <label for="wrap-text">Matter</label></li>
+               <li><input id="task-type" type="checkbox" checked="checked"> <label for="wrap-text">Task Type</label></li>
+               <li><input id="respond-by" type="checkbox" checked="checked"> <label for="wrap-text">Respond By</label></li>
+               <li><input id="final-due-date" type="checkbox" checked="checked"> <label for="wrap-text">Final Due Date</label></li>
+               <li><input id="owner" type="checkbox" checked="checked"> <label for="wrap-text">Owner</label></li>
+               <li><input id="deadline-type" type="checkbox" checked="checked"> <label for="wrap-text">Deadline Type</label></li>
+               <li><input id="comments" type="checkbox" checked="checked"> <label for="wrap-text">Comments</label></li>
+               <li>  <a class="button" href="#">Update Table</a> </li>
+             </ul>
            </div>
-           <div class="cell small-12 align-self-top">Align top. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non harum laborum cum voluptate vel, eius adipisci similique dignissimos nobis at excepturi incidunt fugit molestiae quaerat, consequuntur porro temporibus. Nisi, ex?Align top. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non harum laborum cum voluptate vel, eius adipisci similique dignissimos nobis at excepturi incidunt fugit molestiae quaerat, consequuntur porro temporibus. Nisi, ex?Align top. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non harum laborum cum voluptate vel, eius adipisci similique dignissimos nobis at excepturi incidunt fugit molestiae quaerat, consequuntur porro temporibus. Nisi, ex?</div>
          </div>
       </div>
       <div class="container">

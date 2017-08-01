@@ -14525,21 +14525,21 @@ window.$ = _jquery2.default;
         // Resize sidebar
         var navDiv = (0, _jquery2.default)('#edit');
         //if nav div is has class small-3
-        if (navDiv.hasClass("small-3")) {
+        if (navDiv.hasClass("medium-4")) {
             navDiv.fadeToggle(250, function () {
-                navDiv.toggleClass('small-3');
+                navDiv.toggleClass('medium-4');
                 navDiv.toggleClass('width-zero');
                 var content = (0, _jquery2.default)('#table');
-                content.toggleClass('large-9');
-                content.toggleClass('large-12');
+                content.toggleClass('medium-8');
+                content.toggleClass('medium-12');
             });
         } else {
             var content = (0, _jquery2.default)('#table');
 
             navDiv.toggleClass('width-zero');
-            content.toggleClass('large-9');
-            content.toggleClass('large-12');
-            navDiv.toggleClass('small-3');
+            content.toggleClass('medium-8');
+            content.toggleClass('medium-12');
+            navDiv.toggleClass('medium-4');
 
             navDiv.delay(1750).fadeToggle(250);
 

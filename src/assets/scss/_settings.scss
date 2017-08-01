@@ -119,10 +119,7 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: (
-  small: 20px,
-  medium: 30px,
-);
+$grid-column-gutter: 0px;
 $grid-column-align-edge: true;
 $grid-column-alias: 'columns';
 $block-grid-max: 8;
@@ -285,7 +282,7 @@ $button-fill: solid;
 $button-background: $medium-gray;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $black;
-$button-color-alt: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (

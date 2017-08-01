@@ -61,7 +61,7 @@ navDiv.toggleClass('width-zero');
         content.toggleClass('medium-12');
             navDiv.toggleClass('medium-4');
 
-            navDiv.delay(1750).fadeToggle(250)
+            navDiv.delay(1050).fadeToggle(250)
 
 /*        navDiv.fadeToggle(200, function(){
 

@@ -45,7 +45,7 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
  @include foundation-float-classes;
-//@include foundation-flex-classes;
+@include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
 
@@ -68,13 +68,7 @@ body{
 .close-button{
 	z-index: 999;
 }
-i{
 
-	text-align: center;
-}
-ul a{
-	color: $blue;
-}
 .nested a{
 	color: black;
 }
@@ -85,25 +79,15 @@ ul a{
 	    border: 1px solid #ccc;
 	    padding-bottom: .5em;
 }
-.title-bar-left{
-	padding: 0em 1em;
-	font-size: 1.25em;
-}
-button i{
-	font-size: 1.5em;
-}
 
-.title-bar-left li{
-	padding-right: 1.5em;
-}
-body{
-	padding-top: 1em;
-}
+
+
+
 .header{
 	background-color: white;
 }
 .mobile-ofc{
-	margin-top: 2.5em;
+	margin-top: 4.5em;
 	background-color: white;
 }
 /* TABLE */
@@ -132,7 +116,6 @@ td i{
 	font-size: 1.5em;
 }
 td .menu a{
-
 	padding: .2em;
 }
 table{
@@ -140,16 +123,7 @@ table{
 
 }
 td [type="checkbox"], th [type="checkbox"]{
-	margin:0;
-}
-
-/* footer */
-footer{
-	width:100%; 
-	background-color: white;
-}
-footer .menu{
-	background-color:white;
+	margin:5px;;
 }
 
 *{

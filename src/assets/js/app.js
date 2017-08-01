@@ -11,7 +11,7 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-$(function() {
+/*$(function() {
     var pressed = false;
     var start = undefined;
     var startX, startWidth;
@@ -35,5 +35,46 @@ $(function() {
             $(start).removeClass("resizing");
             pressed = false;
         }
+    });
+});*/
+
+$(function() {
+    $('.fi-wrench').click(function() {
+        // Resize sidebar
+        var navDiv = $('#edit');
+        //if nav div is has class small-3
+        if (navDiv.hasClass("small-3")){
+        navDiv.fadeToggle(250, function(){
+            navDiv.toggleClass('small-3');
+            navDiv.toggleClass('width-zero');
+                    var content = $('#table');
+        content.toggleClass('large-9');
+        content.toggleClass('large-12');
+        });            
+        }
+
+else{
+                   var content = $('#table');
+
+navDiv.toggleClass('width-zero');           
+                content.toggleClass('large-9');
+        content.toggleClass('large-12');
+            navDiv.toggleClass('small-3');
+
+            navDiv.delay(1750).fadeToggle(250)
+
+/*        navDiv.fadeToggle(200, function(){
+
+ 
+        });             */
+        }
+        
+//        $("#edit").toggle();
+
+
+
+        // Resize content
+
+
     });
 });

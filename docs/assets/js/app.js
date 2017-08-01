@@ -14493,30 +14493,67 @@ window.$ = _jquery2.default;
 
 (0, _jquery2.default)(document).foundation();
 
-(0, _jquery2.default)(function () {
+/*$(function() {
     var pressed = false;
     var start = undefined;
     var startX, startWidth;
-
-    (0, _jquery2.default)("table th").mousedown(function (e) {
-        start = (0, _jquery2.default)(this);
+    
+    $("table th").mousedown(function(e) {
+        start = $(this);
         pressed = true;
         startX = e.pageX;
-        startWidth = (0, _jquery2.default)(this).width();
-        (0, _jquery2.default)(start).addClass("resizing");
+        startWidth = $(this).width();
+        $(start).addClass("resizing");
     });
-
-    (0, _jquery2.default)(document).mousemove(function (e) {
-        if (pressed) {
-            (0, _jquery2.default)(start).width(startWidth + (e.pageX - startX));
+    
+    $(document).mousemove(function(e) {
+        if(pressed) {
+            $(start).width(startWidth+(e.pageX-startX));
         }
     });
-
-    (0, _jquery2.default)(document).mouseup(function () {
-        if (pressed) {
-            (0, _jquery2.default)(start).removeClass("resizing");
+    
+    $(document).mouseup(function() {
+        if(pressed) {
+            $(start).removeClass("resizing");
             pressed = false;
         }
+    });
+});*/
+
+(0, _jquery2.default)(function () {
+    (0, _jquery2.default)('.fi-wrench').click(function () {
+        // Resize sidebar
+        var navDiv = (0, _jquery2.default)('#edit');
+        //if nav div is has class small-3
+        if (navDiv.hasClass("small-3")) {
+            navDiv.fadeToggle(250, function () {
+                navDiv.toggleClass('small-3');
+                navDiv.toggleClass('width-zero');
+                var content = (0, _jquery2.default)('#table');
+                content.toggleClass('large-9');
+                content.toggleClass('large-12');
+            });
+        } else {
+            var content = (0, _jquery2.default)('#table');
+
+            navDiv.toggleClass('width-zero');
+            content.toggleClass('large-9');
+            content.toggleClass('large-12');
+            navDiv.toggleClass('small-3');
+
+            navDiv.delay(1750).fadeToggle(250);
+
+            /*        navDiv.fadeToggle(200, function(){
+            
+             
+                    });             */
+        }
+
+        //        $("#edit").toggle();
+
+
+        // Resize content
+
     });
 });
 

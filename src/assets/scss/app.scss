@@ -6,7 +6,7 @@
 
 @include foundation-global-styles;
  @include foundation-grid;
- @include foundation-flex-grid;
+// @include foundation-flex-grid;
 //
 @include foundation-xy-grid-classes;
 @include foundation-typography;
@@ -45,7 +45,7 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
  @include foundation-float-classes;
-@include foundation-flex-classes;
+//@include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
 
@@ -159,4 +159,15 @@ footer .menu{
 	background-color:white;
 }
 
+*{
 
+    -webkit-transition: width 1.7s ease;
+    -moz-transition: width 1.7s ease;
+    -o-transition: width 1.7s ease;
+    transition: width 1.7s ease;
+
+}
+
+.width-zero{
+	width: 0px;
+}

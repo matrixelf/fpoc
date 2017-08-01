@@ -52,25 +52,16 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-.flex-child-auto{
-	padding:10px;
-}
-
 a.button{
 	color: white;
-}
-.container{
-	max-width:97%;
-	margin:auto;
-}
-.grid-padding-x, .cell{
-	padding: 0;
 }
 
 
 
 /* header menu*/
-
+.title-bar-right .menu{
+	float: right;
+}
 
 .close-button{
 	z-index: 999;

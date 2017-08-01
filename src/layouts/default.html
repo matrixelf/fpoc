@@ -1,112 +1,113 @@
 <!doctype html>
 <html class="no-js" lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Foundation for Sites</title>
-      <link rel="stylesheet" href="{{root}}assets/css/app.css">
-      <link rel="stylesheet" href="{{root}}assets/icons/foundation-icons/foundation-icons.css">
-   </head>
-   <body>
-      <div class="container">
-         <div class="row header" data-sticky data-sticky-on="small" data-options="marginTop:0;">
-            <div class="">
-               <div class="logo"><img src="assets/img/appcoll-logo.png" alt="logo" height="40" width="169"></div>
-            </div>
-            <div class="title-bar-left">
-               <ul class="menu">
-                  <li data-toggle="menu">
-                     <i class="fi-list"  ></i>
-                     <div class="title-bar-title">Menu</div>
-                  </li>
-
-
-
-     <!--             <li data-toggle="example-menu" data-hide-for="">
-                     <i class="fi-eye"></i>
-                     <div class="title-bar-title">Change Columns</div>
-                  </li> -->
-
-                  <li>
-                     <i   class="fi-wrench"  ></i>
-                     <div class="title-bar-title">Edit</div>
-                  </li>
-
-               </ul>
-            </div>
-         </div>
-
-         <div class="off-canvas position-right" data-position="bottom" id="menu" data-off-canvas>
-            <div class="off-canvas position-right is-transition-push is-open" data-position="right" aria-hidden="true">
-       
-               <ul class="vertical menu">
-                  <li>
-                     <ul class="menu accordion-menu" data-accordion-menu>
-                        <li>
-                           <a href="#">Main Menu</a>
-                           <ul class="menu vertical nested">
-                              <li><a href="#">Tasks</a></li>
-                              <li><a href="#">Inventions</a></li>
-                              <li><a href="#">Matters</a></li>
-                              <li><a href="#">Prior Art</a></li>
-                              <li><a href="#">Files</a></li>
-                              <li><a href="#">Billing</a></li>
-                              <li><a href="#">Reports</a></li>
-                              <li><a href="#">Contacts</a></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </li>
-                  <li>
-                     <ul class="vertical menu accordion-menu" data-accordion-menu>
-                        <li>
-                           <a href="#">Account</a>
-                           <ul class="menu vertical nested">
-                              <li><a href="#">Logout</a></li>
-                              <li><a href="#">Switch Accounts</a></li>
-                              <li><a href="#">Your Profile</a></li>
-                              <li><a href="#">Settings</a></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </li>
-                  <li>
-                     <ul class="vertical menu accordion-menu" data-accordion-menu>
-                        <li>
-                           <a href="#">Help</a>
-                           <ul class="menu vertical nested">
-                              <li><a href="#">Contact Us</a></li>
-                              <li><a href="#">Browse Help</a></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </li>
-                  <li><input type="search" placeholder="Search"></li>
-                  <li>
-                     <a class="">
-                     <i class="fi-magnifying-glass"></i> 
-                     Search
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-
-         {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-         {{> body}}
-      </div>
-      <div class="container">
-         <footer>
-            <ul class="menu align-center">
-               <li> <a href="#"> Account Info - Permissions </a> 
-               </li>
-               <li> <a href="#">2017 AppColl. Inc </a></li>
-               <li> <a href="#">Service Agreement </a> </li>
-               <li> <a> Privacy Policy</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/icons/foundation-icons/foundation-icons.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class=" header" data-sticky data-sticky-on="small" data-options="marginTop:0;">
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <div class="logo"><img src="assets/img/appcoll-logo.png" alt="logo" height="40" width="169"></div>
+          </div>
+          <div class="title-bar-right">
+            <ul class="menu">
+              <li data-toggle="menu">
+                <i class="fi-list"  ></i>
+                <div class="title-bar-title">Menu</div>
+              </li>
+              <!--             <li data-toggle="example-menu" data-hide-for="">
+                <i class="fi-eye"></i>
+                <div class="title-bar-title">Change Columns</div>
+                </li> -->
+              <li>
+                <i   class="fi-wrench"  ></i>
+                <div class="title-bar-title">Edit</div>
+              </li>
             </ul>
-         </footer>
+          </div>
+        </div>
       </div>
-      <script src="{{root}}assets/js/app.js"></script>
-   </body>
+      <div class="off-canvas position-left" data-position="bottom" id="menu" data-off-canvas>
+        <div class="off-canvas position-left is-transition-push is-open" data-position="left" aria-hidden="true">
+          <ul class="vertical menu">
+            <li>
+              <ul class="menu accordion-menu" data-accordion-menu>
+                <li>
+                  <a href="#">Main Menu</a>
+                  <ul class="menu vertical nested">
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Inventions</a></li>
+                    <li><a href="#">Matters</a></li>
+                    <li><a href="#">Prior Art</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Billing</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Contacts</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="vertical menu accordion-menu" data-accordion-menu>
+                <li>
+                  <a href="#">Account</a>
+                  <ul class="menu vertical nested">
+                    <li><a href="#">Logout</a></li>
+                    <li><a href="#">Switch Accounts</a></li>
+                    <li><a href="#">Your Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="vertical menu accordion-menu" data-accordion-menu>
+                <li>
+                  <a href="#">Help</a>
+                  <ul class="menu vertical nested">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Browse Help</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><input type="search" placeholder="Search"></li>
+            <li>
+              <a class="">
+              <i class="fi-magnifying-glass"></i> 
+              Search
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+            {{> body}}
+    </div>
+    <div class="row top-bar align-center">
+    </div>
+    <div class="row">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu columns">
+          <li> <a href="#"> Account Info - Permissions </a> 
+          </li>
+          <li> <a href="#"> &copy;2017 AppColl. Inc </a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class=" menu">
+          <li> <a href="#">Service Agreement </a> </li>
+          <li> <a> Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
 </html>

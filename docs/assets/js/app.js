@@ -14541,7 +14541,7 @@ window.$ = _jquery2.default;
             content.toggleClass('medium-12');
             navDiv.toggleClass('medium-4');
 
-            navDiv.delay(1050).fadeToggle(250);
+            navDiv.delay(550).fadeToggle(250);
 
             /*        navDiv.fadeToggle(200, function(){
             

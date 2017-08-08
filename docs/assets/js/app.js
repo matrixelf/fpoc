@@ -14492,7 +14492,6 @@ window.$ = _jquery2.default;
 
 
 (0, _jquery2.default)(document).foundation();
-(0, _jquery2.default)("#sub-edit").click();
 /*$(function() {
     var pressed = false;
     var start = undefined;
@@ -14545,8 +14544,7 @@ window.$ = _jquery2.default;
             navDiv.fadeToggle(50);
 
             /*        navDiv.fadeToggle(200, function(){
-            
-             
+               
                     });             */
         }
 

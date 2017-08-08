@@ -52,13 +52,19 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-a.button{
-	color: white;
-}
 
 body{
 	margin: 20px;
 
+}
+.button{
+	margin: 0.7em;
+}
+i{
+	font-size: 1.5em;
+}
+.button i{
+	font-size: 2em;
 }
 /* header menu*/
 .title-bar-right .menu{
@@ -70,14 +76,14 @@ body{
 }
 
 .nested a{
-	color: black;
+
 }
 .is-accordion-submenu a:hover{
 	color: $dark-gray;
 }
 .accordion-menu{
 	    border: 1px solid #ccc;
-	    padding-bottom: .5em;
+
 }
 
 
@@ -86,10 +92,7 @@ body{
 .header{
 	background-color: white;
 }
-.mobile-ofc{
-	margin-top: 4.5em;
-	background-color: white;
-}
+
 /* TABLE */
 td {
 	/*padding: 0;
@@ -128,10 +131,10 @@ td [type="checkbox"], th [type="checkbox"]{
 
 *{
 
-    -webkit-transition: width 0.5s ease;
-    -moz-transition: width 0.5s ease;
-    -o-transition: width 0.5s ease;
-    transition: width 0.5s ease;
+    -webkit-transition: width 1.5s ease;
+    -moz-transition: width 1.5s ease;
+    -o-transition: width 1.5s ease;
+    transition: width 1.5s ease;
 
 }
 

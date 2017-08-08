@@ -14492,7 +14492,7 @@ window.$ = _jquery2.default;
 
 
 (0, _jquery2.default)(document).foundation();
-
+(0, _jquery2.default)("#sub-edit").click();
 /*$(function() {
     var pressed = false;
     var start = undefined;
@@ -14525,23 +14525,24 @@ window.$ = _jquery2.default;
         // Resize sidebar
         var navDiv = (0, _jquery2.default)('#edit');
         //if nav div is has class small-3
-        if (navDiv.hasClass("medium-4")) {
-            navDiv.fadeToggle(250, function () {
-                navDiv.toggleClass('medium-4');
+        if (navDiv.hasClass("medium-3")) {
+            navDiv.toggleClass('medium-3');
+            navDiv.fadeToggle(50, function () {
+
                 navDiv.toggleClass('width-zero');
                 var content = (0, _jquery2.default)('#table');
-                content.toggleClass('medium-8');
+                content.toggleClass('medium-9');
                 content.toggleClass('medium-12');
             });
         } else {
             var content = (0, _jquery2.default)('#table');
 
             navDiv.toggleClass('width-zero');
-            content.toggleClass('medium-8');
+            content.toggleClass('medium-9');
             content.toggleClass('medium-12');
-            navDiv.toggleClass('medium-4');
+            navDiv.toggleClass('medium-3');
 
-            navDiv.delay(550).fadeToggle(250);
+            navDiv.delay(750).fadeToggle(250);
 
             /*        navDiv.fadeToggle(200, function(){
             

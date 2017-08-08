@@ -11,193 +11,188 @@
   <body>
     <div class="row">
       <div class=" header" data-sticky data-sticky-on="small" data-options="marginTop:0;">
-        <div class="title-bar">
-          <div class="title-bar-left">
+        <div class="top-bar">
+          <div class="top-bar-left">
             <div class="logo"><img src="assets/img/appcoll-logo.png" alt="logo" height="40" width="169"></div>
           </div>
-          <div class="title-bar-right">
+          <div class="top-bar-right" id="title">
             <ul class="menu">
-              <li data-toggle="menu">
-                <i class="fi-list"  ></i>
-                <div class="title-bar-title">Menu</div>
-              </li>
+
               <!--             <li data-toggle="example-menu" data-hide-for="">
                 <i class="fi-eye"></i>
                 <div class="title-bar-title">Change Columns</div>
                 </li> -->
               <li>
-                <i   class="fi-wrench"  ></i>
-                <div class="title-bar-title">Edit</div>
+                <a class="button"> <i   class="fi-wrench"  ></i> </a>
+
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div class="off-canvas position-left" data-position="bottom" id="menu" data-off-canvas>
-        <div class="off-canvas position-left is-transition-push is-open" data-position="left" aria-hidden="true">
-          <ul class="vertical menu">
-            <li>
-              <ul class="menu accordion-menu" data-accordion-menu>
-                <li>
-                  <a href="#">Main Menu</a>
-                  <ul class="menu vertical nested">
-                    <li><a href="#">Tasks</a></li>
-                    <li><a href="#">Inventions</a></li>
-                    <li><a href="#">Matters</a></li>
-                    <li><a href="#">Prior Art</a></li>
-                    <li><a href="#">Files</a></li>
+        
+
+</div>
+
+<div class="top-bar" id="example-menu">
+
+    <ul class="dropdown menu active" data-dropdown-menu>
+
+                    <li><a  href="#">Tasks</a></li>
+                    <li><a  href="#">Inventions</a></li>
+                    <li><a  href="#">Matters</a></li>
+                    <li><a  href="#">Prior Art</a></li>
+                    <li><a  href="#">Files</a></li>
                     <li><a href="#">Billing</a></li>
-                    <li><a href="#">Reports</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a  href="#">Reports</a></li>
+                    <li><a  href="#">Contacts</a></li>
+          
+
+
+    </ul>
+
+  <div class="top-bar-right">
+     
+  </div>
+</div>
+      </div>
+
+
+
+
+
+      <div class="columns medium-3 " data-position="bottom" id="edit" data-off-canvas data-sticky-container>
+        <div class="columns medium-12 sticky" data-sticky data-margin-top="10" >
+
+
+
+<ul class="accordion " data-accordion="keub3t-accordion" role="tablist" data-allow-all-closed="true" >
+  <li class="accordion-item is-active" data-accordion-item="">
+    <a href="#" class="accordion-title" aria-controls="oqt063-accordion" role="tab" id="oqt063-accordion-label" aria-expanded="true" aria-selected="true">Edit</a>
+    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="oqt063-accordion-label" aria-hidden="false" id="oqt063-accordion" style="display: block;">
+                  <ul class="menu"  >
+                    <li><a class= href="#">Add</a></li>
+                    <li><a class= href="#">Delete</a></li>
+                    <li><a class= href="#">Rechedule</a></li>
+                    <li><a class= href="#">Set Owner</a></li>
+                    <li><a class= href="#">Close Tasks</a></li>
+                    <li><a class= href="#">Add comment To Tasks</a></li>
+                    <li><a class= href="#">Ad Document/Form Letter</a></li>
+                    <li><a class= href="#">Resend Notifications</a></li>
+                    <li><a class= href="#">Regenerate Taks</a></li>
+                    <li><a class= href="#">Delete Duplicate Tasks</a></li>
                   </ul>
-                </li>
+                             <div class="text-center">
+              <a class="">
+              <i class="fi-clock"></i> 
+              Timers
+              </a>
+            </div>
+            <div class="text-center">
+              <a class="">
+              <i class="fi-arrow-up"></i> 
+              Import
+              </a>
+            </div>
+            <div class="text-center" data-toggle="column-menu" data-hide-for="">
+              <a>
+              <i class="fi-eye"></i>
+              Change Columns
+              </a>
+            </div>
+
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item="">
+    <a href="#" class="accordion-title" aria-controls="uun5lk-accordion" role="tab" id="uun5lk-accordion-label" aria-expanded="false" aria-selected="false">Navigate</a>
+    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="uun5lk-accordion-label" aria-hidden="true" id="uun5lk-accordion" style="display: none;">
+
+          <ul class="vertical menu nested">
+            <li>
+              <a href="#">Manage Task Types</a>
+              <ul class="menu vertical nested">
+                <li><a href="#"> </a></li>
               </ul>
             </li>
-            <li>
-              <ul class="vertical menu accordion-menu" data-accordion-menu>
-                <li>
-                  <a href="#">Account</a>
-                  <ul class="menu vertical nested">
+          </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item="">
+    <a href="#" class="accordion-title" aria-controls="qieytb-accordion" role="tab" id="qieytb-accordion-label" aria-expanded="false" aria-selected="false">Search / Filter</a>
+    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="qieytb-accordion-label" aria-hidden="true" id="qieytb-accordion" style="display: none;">
+              
+                  <ul class="menu vertical ">
+                    <li><a href="#">Save View as Report</a></li>
+                    <li>
+                      <label>
+                        Select Report
+                        <select>
+                          <option value="r1">Report 1</option>
+                          <option value="r2">Report 2</option>
+                          <option value="r3">Report 3</option>
+                          <option value="r4">Report 4</option>
+                        </select>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        Filter
+                        <select>
+                          <option value="Open">All Open</option>
+                          <option value="closed">All Closed</option>
+                        </select>
+                      </label>
+                    </li>
+                    <li><a href="#">Add Filters</a></li>
+                    <li>
+                      <label>
+                        Items/Page
+                        <select>
+                          <option value="25">25</option>
+                          <option value="50">50</option>
+                          <option value="75">75</option>
+                        </select>
+                      </label>
+                    </li>
+                    <li><input id="wrap-text" type="checkbox"> <label for="wrap-text">Wrap Text</label></li>
+                
+                </li>
+              </ul>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item="">
+    <a href="#" class="accordion-title" aria-controls="qieytb-accordion" role="tab" id="qieytb-accordion-label" aria-expanded="false" aria-selected="false">Account</a>
+    <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="qieytb-accordion-label" aria-hidden="true" id="qieytb-accordion" style="display: none;">
+        <ul class="menu">
                     <li><a href="#">Logout</a></li>
                     <li><a href="#">Switch Accounts</a></li>
-                    <li><a href="#">Your Profile</a></li>
-                    <li><a href="#">Settings</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="vertical menu accordion-menu" data-accordion-menu>
-                <li>
-                  <a href="#">Help</a>
-                  <ul class="menu vertical nested">
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Browse Help</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><input type="search" placeholder="Search"></li>
-            <li>
+                    <a href="#">Your Profile</a>
+                    <a href="#">Settings</a>
+        </ul>
+</div>
+</li>
+
+  <li>
+            <div><input type="search" placeholder="Search"></div>
+            <div>
               <a class="">
               <i class="fi-magnifying-glass"></i> 
               Search
-           </a>
-         </li>
-       </ul>
+              </a>
+            </div>
+            </li>
+      </ul>
+
+
+
+
+
      </div>
    </div>
+
             <!-- add meny to activate script to hide columns display none or show them again-->
             <div class="row" id="anchor">
               <div id="anchor">
                 <div id="toggle">
-                  <div class="medium-4 columns" id="edit">
-                    <div class="sticky" data-sticky data-top-anchor="anchor:top">
-                      <ul class="mobile-ofc vertical menu">
-                        <li>
-                          <ul class=" menu accordion-menu" data-accordion-menu>
-                            <li>
-                              <a href="#">Make Changes</a>
-                              <ul class="menu nested">
-                                <li><a href="#">Add</a></li>
-                                <li><a href="#">Delete</a></li>
-                                <li><a href="#">Rechedule</a></li>
-                                <li><a href="#">Set Owner</a></li>
-                                <li><a href="#">Close Tasks</a></li>
-                                <li><a href="#">Add comment To Tasks</a></li>
-                                <li><a href="#">Ad Document/Form Letter</a></li>
-                                <li><a href="#">Resend Notifications</a></li>
-                                <li><a href="#">Regenerate Taks</a></li>
-                                <li><a href="#">Delete Duplicate Tasks</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <ul class="menu accordion-menu" data-accordion-menu>
-                            <li>
-                              <a href="#">Navigate</a>
-                              <ul class="vertical menu nested">
-                                <li>
-                                  <a href="#">Manage Task Types</a>
-                                  <ul class="menu vertical nested">
-                                    <li><a href="#"> </a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <ul class="vertical menu accordion-menu" data-accordion-menu>
-                            <li>
-                              <a href="#">Alter Current View</a>
-                              <ul class="menu vertical nested">
-                                <li><a href="#">Save View as Report</a></li>
-                                <li>
-                                  <label>
-                                    Select Report
-                                    <select>
-                                      <option value="r1">Report 1</option>
-                                      <option value="r2">Report 2</option>
-                                      <option value="r3">Report 3</option>
-                                      <option value="r4">Report 4</option>
-                                    </select>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label>
-                                    Filter
-                                    <select>
-                                      <option value="Open">All Open</option>
-                                      <option value="closed">All Closed</option>
-                                    </select>
-                                  </label>
-                                </li>
-                                <li><a href="#">Add Filters</a></li>
-                                <li>
-                                  <label>
-                                    Items/Page
-                                    <select>
-                                      <option value="25">25</option>
-                                      <option value="50">50</option>
-                                      <option value="75">75</option>
-                                    </select>
-                                  </label>
-                                </li>
-                                <li><input id="wrap-text" type="checkbox"> <label for="wrap-text">Wrap Text</label></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="text-center">
-                          <a class="">
-                          <i class="fi-clock"></i> 
-                          Timers
-                          </a>
-                        </li>
-                        <li class="text-center">
-                          <a class="">
-                          <i class="fi-arrow-up"></i> 
-                          Import
-                          </a>
-                        </li>
-                        <li class="text-center" data-toggle="example-menu" data-hide-for="">
-                          <a>
-                          <i class="fi-eye"></i>
-                          Change Columns
-                          </a>
-                        </li>
-                        <li><input type="search" placeholder="Search"></li>
-                        <li>
-                          <a class="">
-                          <i class="fi-magnifying-glass"></i> 
-                          Search
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            
                 </div>
                 <div id="table" class="columns medium-8">
                   <table class="striped hover">
@@ -528,12 +523,11 @@
               </div>
             </div>
     </div>
-    <div class="row top-bar align-center">
-    </div>
+
     <div class="row">
     <div class="top-bar">
 
-        <ul class="menu">
+        <ul class="menu top-bar-right">
           <li> <a href="#"> Account Info - Permissions </a> 
           </li>
           <li> <a href="#"> &copy;2017 AppColl. Inc </a></li>
@@ -545,6 +539,27 @@
         </ul>
       
     </div>
+
+         <div class="off-canvas position-right" data-position="right" id="column-menu" data-off-canvas>
+            <div class="off-canvas position-right is-transition-push is-open" data-position="right" aria-hidden="true">
+               <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <ul class="mobile-ofc vertical menu nested">
+                  <!-- $("#links").prop("checked") -->
+                  <li><input id="links" type="checkbox" checked="checked"> <label for="wrap-text">Links</label></li>
+                  <li><input id="task-status" type="checkbox" checked="checked"> <label for="wrap-text">Task Status</label></li>
+                  <li><input id="matter" type="checkbox" checked="checked"> <label for="wrap-text">Matter</label></li>
+                  <li><input id="task-type" type="checkbox" checked="checked"> <label for="wrap-text">Task Type</label></li>
+                  <li><input id="respond-by" type="checkbox" checked="checked"> <label for="wrap-text">Respond By</label></li>
+                  <li><input id="final-due-date" type="checkbox" checked="checked"> <label for="wrap-text">Final Due Date</label></li>
+                  <li><input id="owner" type="checkbox" checked="checked"> <label for="wrap-text">Owner</label></li>
+                  <li><input id="deadline-type" type="checkbox" checked="checked"> <label for="wrap-text">Deadline Type</label></li>
+                  <li><input id="comments" type="checkbox" checked="checked"> <label for="wrap-text">Comments</label></li>
+                  <li>  <a class="button" href="#">Update Table</a> </li>
+               </ul>
+            </div>
+         </div>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

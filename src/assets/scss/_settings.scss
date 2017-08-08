@@ -65,7 +65,7 @@
 // 1. Global
 // ---------
 
-$global-font-size: 70%;
+$global-font-size: 95%;
 $global-width: rem-calc(1800);
 $global-lineheight: 1.5;
 $foundation-palette: (
@@ -279,7 +279,7 @@ $button-font-family: inherit;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $medium-gray;
+$button-background: $light-gray;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $black;
 $button-color-alt: $white;

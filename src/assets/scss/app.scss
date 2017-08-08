@@ -66,6 +66,9 @@ i{
 .button i{
 	font-size: 2em;
 }
+.menu li {
+	margin: auto;
+}
 /* header menu*/
 .title-bar-right .menu{
 	float: right;
@@ -129,14 +132,7 @@ td [type="checkbox"], th [type="checkbox"]{
 	margin:5px;;
 }
 
-*{
 
-    -webkit-transition: width 1.5s ease;
-    -moz-transition: width 1.5s ease;
-    -o-transition: width 1.5s ease;
-    transition: width 1.5s ease;
-
-}
 
 .width-zero{
 	width: 0px;

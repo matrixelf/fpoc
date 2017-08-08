@@ -14525,8 +14525,8 @@ window.$ = _jquery2.default;
         // Resize sidebar
         var navDiv = (0, _jquery2.default)('#edit');
         //if nav div is has class small-3
-        if (navDiv.hasClass("medium-3")) {
-            navDiv.toggleClass('medium-3');
+        if (navDiv.hasClass("medium-4")) {
+            navDiv.toggleClass('medium-4');
             navDiv.fadeToggle(50, function () {
 
                 navDiv.toggleClass('width-zero');
@@ -14540,9 +14540,9 @@ window.$ = _jquery2.default;
             navDiv.toggleClass('width-zero');
             content.toggleClass('medium-9');
             content.toggleClass('medium-12');
-            navDiv.toggleClass('medium-3');
+            navDiv.toggleClass('medium-4');
 
-            navDiv.delay(750).fadeToggle(250);
+            navDiv.fadeToggle(50);
 
             /*        navDiv.fadeToggle(200, function(){
             
